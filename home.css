@@ -1,0 +1,150 @@
+body{
+	background-color: black;
+	margin: 0px;
+}
+
+svg{
+	align-self: center;
+	justify-content: center;
+	width: 500px;
+}
+@keyframes curse{
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes anim{
+	0%{
+		width: 100%;
+	}
+	
+	100%{
+		width: 0px;
+		height: 0px;
+		display: none;
+	}
+}
+
+
+#cur1{
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	stroke-width: 80;
+	animation: curse .6s linear forwards;
+	stroke: white;
+}
+
+#cur2{
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	stroke-width: 50;
+	animation: curse .6s linear forwards 0.6;
+	stroke: white;
+}
+
+
+#myp{
+	stroke-dasharray: 1800;
+	stroke-dashoffset: 1800;
+	stroke-width: 80;
+	animation: curse .6s linear forwards 1;
+	animation-delay: 0.5s;
+	stroke: white;
+}
+
+#pp{
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	stroke-width: 80;
+	animation: curse .6s linear forwards 0.7;
+	animation-delay: 0.8s;
+	stroke: white;
+}
+
+
+#ortfp
+{
+	stroke-dasharray: 1800;
+	stroke-dashoffset: 1800;
+	stroke-width: 80;
+	animation: curse .6s linear forwards 1;
+	animation-delay: 1s;
+	stroke: white;
+}
+
+#oliop{
+	stroke-dasharray: 1800;
+	stroke-dashoffset: 1800;
+	stroke-width: 80;
+	animation: curse .6s linear forwards 1;
+	animation-delay: 1.5s;	
+	stroke: white;
+}
+#dotp
+{
+	stroke-dasharray: 1800;
+	stroke-dashoffset: 1800;
+	stroke-width: 80;
+	animation: curse .6s linear forwards 1;
+	stroke: white;
+}
+
+.welcomecontainer
+{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	
+	animation: anim forwards;
+	animation-duration: 2s;
+	align-items: center;
+	animation-delay: 3s;
+
+}
+.welcome
+{
+	margin: 0px;
+	color: white;
+	font-size: 160px;
+	font-weight: bold;
+	margin-top: 250px;
+	
+}
+.svgcontainer
+{
+	
+	width: 500px;
+	margin: auto;
+}
+.navbar
+{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.option{
+	padding: 20px 80px;
+}
+.option a{
+	color: white;
+	text-decoration: none;
+	font-size: 22px;
+}
+
+
+.imagecontainer
+{
+	height: 550px;
+	width: 400px;
+	overflow: hidden;
+
+}
+
+.imagecontainer img
+{
+	max-height: 550px;
+}
+
+
