@@ -1,6 +1,7 @@
 body{
 	background-color: black;
 	margin: 0px;
+	color: white;
 }
 
 svg{
@@ -120,6 +121,7 @@ svg{
 }
 .navbar
 {
+	padding: 20px;
 	display: flex;
 	justify-content: flex-end;
 }
@@ -133,7 +135,28 @@ svg{
 	font-size: 22px;
 }
 
+.introductioncontainer
+{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+}
 
+.introduction{
+	
+}
+
+.introduction p{
+	font-size: 80px;
+	margin: 0px;
+	font-family: brush script std,  brush script mt;
+}
+
+#mayank{
+	margin-top: 10px;
+	font-size: 108px;
+	font-family: fantasy;
+}
 .imagecontainer
 {
 	height: 550px;
