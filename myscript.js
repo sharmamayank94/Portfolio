@@ -33,6 +33,10 @@ var type2 = ()=>{
 		blog.innerHTML+=text2[j++];
 		setTimeout(type2, 10);
 	}	
+	else
+	{
+		blog.innerHTML+="<br/>";
+	}
 }
 setTimeout(type, 8000);
 setTimeout(type2, 15000);
