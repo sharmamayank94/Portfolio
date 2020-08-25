@@ -1,0 +1,111 @@
+	
+  <div class="object-wrapper speed-1">
+    <div class="object object-1"></div>
+  </div>
+  <div class="object-wrapper speed-2">
+    <div class="object object-2"></div>
+  </div>
+  <div class="object-wrapper speed-3">
+    <div class="object object-3"></div>
+  </div>
+  <div class="object-wrapper speed-4">
+    <div class="object object-4"></div>
+  </div>
+  <div class="object-wrapper speed-5">
+    <div class="object object-5"></div>
+  </div>
+  <div class="object-wrapper speed-6">
+    <div class="object object-6"></div>
+  </div>
+  <div class="page-content">
+</div>
+
+
+
+
+
+
+
+
+
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+ overflow: auto;
+  
+}
+
+.object-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: none;
+  justify-content: center;
+}
+
+.speed-1 {
+  transform: translateZ(-1px) scale(2);
+}
+
+.speed-2 {
+  transform: translateZ(-2px) scale(3);
+}
+
+.speed-3 {
+  transform: translateZ(-3px) scale(4);
+}
+
+.speed-4 {
+  transform: translateZ(-4px) scale(5);
+}
+
+.speed-5 {
+  transform: translateZ(-5px) scale(6);
+}
+
+.speed-6 {
+  transform: translateZ(-6px) scale(7);
+}
+
+.object {
+  margin-left: 250px;
+  height: 100px;
+  width: 300px;
+}
+
+.object-1 {
+  margin-top: 700px;
+  background: red;
+}
+
+.object-2 {
+  margin-top: 800px;
+  background: yellow;
+}
+
+.object-3 {
+  margin-top: 900px;
+  background: blue;
+}
+
+.object-4 {
+  margin-top: 1000px;
+  background: green;
+}
+
+.object-5 {
+  margin-top: 1100px;
+  background: pink;
+}
+
+.object-6 {
+  margin-top: 1200px;
+  background: purple;
+}
+
+.page-content {
+  height: 6000px;
+}

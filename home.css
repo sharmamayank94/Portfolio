@@ -1,7 +1,14 @@
+@keyframes colorchange
+{
+	100%{background-color: white;}
+}
+
+
 body{
 	background-color: black;
 	margin: 0px;
 	color: white;
+
 }
 
 svg{
@@ -128,11 +135,14 @@ svg{
 
 .option{
 	padding: 20px 80px;
+
 }
 .option a{
 	color: white;
 	text-decoration: none;
 	font-size: 22px;
+	border: 2px solid white;
+	padding: 5px 10px;
 }
 
 .introductioncontainer
@@ -146,10 +156,7 @@ svg{
 
 
 @keyframes shake{
-	0%{
-		width: 0px;
-
-	}
+	
 	100%{
 		width: 800px;	
 		
@@ -157,8 +164,8 @@ svg{
 }
 
 @keyframes imagetrans{
-	0%{
-		opacity: 0;
+	100%{
+
 	}
 }
 
@@ -168,7 +175,7 @@ svg{
 	overflow: hidden;
 	animation: shake forwards;
 	animation-delay: 4s;
-	animation-duration: 2s;
+	animation-duration: 1.5s;
 }
 
 .introduction p{
@@ -179,13 +186,57 @@ svg{
 	
 }
 
+
+@keyframes greetingdisappear{
+	100%{
+		width: 0px;
+		height: 0px;
+	}
+}
+@keyframes namesize{
+	100%{
+		font-size: 40px;
+	}
+}
+
 #mayank{
-	
+
 	margin-top: 30px;
 	font-size: 108px;
 	font-family: fantasy;
+	animation: namesize forwards;
+	animation-duration: 1s;
+	animation-delay: 5.5s;
 	
 }
+.greeting
+{
+	height: 100px;
+	overflow: hidden;
+	animation: greetingdisappear forwards;
+	animation-duration: 1s;
+	animation-delay: 5.5s;
+
+}
+
+@keyframes nice
+{
+
+	30%{width: 800px;}
+	70%{width: 800px;}
+	100%{width: 0px;}
+}
+
+.nicetoseeyou
+{
+	width: 0px;
+	overflow: hidden;
+	animation: nice forwards;
+	animation-duration: 1.8s;
+	animation-delay: 6s;
+}
+
+
 .imagecontainer
 {
 	height: 550px;
@@ -198,4 +249,7 @@ svg{
 {
 	max-height: 550px;
 }
+
+
+
 
