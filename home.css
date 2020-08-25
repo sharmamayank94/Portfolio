@@ -11,11 +11,6 @@ body{
 
 }
 
-svg{
-	align-self: center;
-	justify-content: center;
-	width: 500px;
-}
 @keyframes curse{
 	100% {
 		stroke-dashoffset: 0;
@@ -93,7 +88,7 @@ svg{
 {
 	stroke-dasharray: 1800;
 	stroke-dashoffset: 1800;
-	stroke-width: 80;
+	stroke-width: 30;
 	animation: curse .6s linear forwards 1;
 	stroke: white;
 }
@@ -290,3 +285,22 @@ svg{
 
 }
 
+@keyframes boxanim{
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+#Layer2{
+	width: 1000px;
+	position: absolute;
+	top: 80px;
+}
+
+#squarep{
+	stroke-dasharray: 10000;
+	stroke-dashoffset: 10000;
+	stroke-width: 40;
+	animation: boxanim 6.8s  14s linear forwards;
+	stroke: turquoise;
+}
