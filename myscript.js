@@ -40,3 +40,34 @@ var type2 = ()=>{
 }
 setTimeout(type, 8000);
 setTimeout(type2, 15000);
+
+
+var works = document.querySelector(".works");
+var letssee = document.getElementsByClassName("letssee")[0];
+var seemy = document.getElementsByClassName("seemy")[0];
+var height = works.offsetHeight;
+
+document.onscroll = ()=>{
+	
+	seemy.style.opacity = (works.getBoundingClientRect().bottom-300)/height;
+	if(works.getBoundingClientRect().top<letssee.getBoundingClientRect().top ){
+		
+		letssee.style.display = "block";
+	}
+	else
+	{
+		letssee.style.display = "none";
+	}
+	if(works.getBoundingClientRect().top<window.innerHeight )
+	{
+		works.style.opacity = 0.9;
+		var x = document.getElementsByTagName("BODY")[0];
+		//x.style.backgroundImage = "url('background.jpg')";
+	}
+	else if(works.getBoundingClientRect().top>window.innerHeight)
+	{
+		works.style.opacity = 0;	
+		//x.style.backgroundImage = "url('')";
+		//x.style.backgroundColor = "black";
+	}
+}

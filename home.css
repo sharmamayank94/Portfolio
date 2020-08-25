@@ -1,13 +1,19 @@
 @keyframes colorchange
 {
 	100%{background-color: white;}
+
 }
 
 
 body{
-	background-color: black;
+	
 	margin: 0px;
 	color: white;
+	background-color: black;
+	background-image: url('background2.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 
 }
 
@@ -142,6 +148,7 @@ body{
 
 .introductioncontainer
 {
+	height: 100vh;
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-around;
@@ -295,6 +302,7 @@ body{
 	width: 1000px;
 	position: absolute;
 	top: 80px;
+	z-index: -1;
 }
 
 #squarep{
@@ -303,4 +311,64 @@ body{
 	stroke-width: 40;
 	animation: boxanim 6.8s  14s linear forwards;
 	stroke: turquoise;
+}
+
+@keyframes worklink{
+	100%{
+		opacity: 1;
+	}
+}
+
+
+.worklink a{
+	display: inline-block;
+	margin: 20px;
+	opacity: 0;
+	text-decoration: none;
+	padding: 10px;
+	background-color: white;
+	font-size: 30px;
+	color: black;
+	animation: worklink forwards;
+	animation-delay: 22s;
+	animation-duration: 1s;
+	transition: 0.5s;
+}
+
+
+.worklink a:hover
+{
+	
+	transform: scale(1.1);
+}
+
+.works{
+	margin: auto;
+	
+	width:80%;
+	opacity: 0;
+	background-color: white;
+	height: 200vh;
+	transition: 1s;
+	overflow: hidden;
+}
+
+.letssee{
+	position: fixed;
+	top: 10%;
+	left: 50%;
+	color: black;
+	font-size: 60px;
+	transform: translate(-50%, -50%);
+	font-family: Fantasy, Georgia;
+}
+
+.education{
+
+	width: 80%;
+	margin: auto;
+	margin-top: 50px;
+	background-color: aqua;
+	opacity: 0.8;
+	height: 100vh;
 }
