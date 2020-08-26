@@ -359,6 +359,8 @@ body{
 
 .works{
 	margin: auto;
+	padding: 50px;
+	padding-top: 150px;
 	
 	width:80%;
 	opacity: 0;
@@ -370,14 +372,32 @@ body{
 
 .letssee{
 	position: fixed;
+	height: 150px;
 	top: 10%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: black;
 	font-size: 60px;
-	
+	background-color: white;
 	font-family: Fantasy, Georgia;
 }
+.workcontainer:nth-child(odd) {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.workcontainer:nth-child(even) {
+  margin: 50px;
+   display: flex;
+  flex-direction: row-reverse;
+}
+
+
+.workimagecontainer img{
+	max-width: 450px;
+}
+
 
 .contact{
 	background-color: white;
@@ -439,6 +459,7 @@ body{
 		font-size: 40px;
 	}
 	.greeting{
+		height: 50px;
 		font-size: 40px;
 	}
 	.about1{
@@ -510,6 +531,9 @@ body{
 		width: 300px;
 		padding: 0;
 	}
+	.introduction{
+		padding: 10px;
+	}
 }
 
 
@@ -577,10 +601,10 @@ body{
 	}
 
 	@keyframes namesize{
-	100%{
-		font-size: 20px;
+		100%{
+			font-size: 20px;
+		}
 	}
-}
 
 	#mayank, .greeting{
 		font-size: 25px;
@@ -600,7 +624,7 @@ body{
 	}
 	.about1{
 		width: 300px;
-		font-size: 20px;
+		font-size: 15px;
 	}
 	.blog{
 		font-size: 20px;
