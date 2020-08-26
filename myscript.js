@@ -44,20 +44,24 @@ setTimeout(type2, 15000);
 
 var works = document.querySelector(".works");
 var letssee = document.getElementsByClassName("letssee")[0];
+var letssee2 = document.getElementsByClassName("letssee2")[0];
 var seemy = document.getElementsByClassName("seemy")[0];
+var contact = document.getElementsByClassName("contact")[0];
 var height = works.offsetHeight;
 
 document.onscroll = ()=>{
 	
 	seemy.style.opacity = (works.getBoundingClientRect().bottom-300)/height;
-	if(works.getBoundingClientRect().top<letssee.getBoundingClientRect().top && 
-		works.getBoundingClientRect().bottom>letssee.getBoundingClientRect().bottom){
+	if(works.getBoundingClientRect().top<letssee.getBoundingClientRect().top
+	 && works.getBoundingClientRect().bottom>100 ){
 		
 		letssee.style.display = "block";
+		letssee2.style.display = "block";
 	}
 	else
 	{
 		letssee.style.display = "none";
+		letssee2.style.display = "none";
 	}
 	if(works.getBoundingClientRect().top<window.innerHeight )
 	{
