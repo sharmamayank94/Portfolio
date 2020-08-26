@@ -17,7 +17,7 @@ var type = ()=>{
 			blog.style.backgroundColor = "blue";
 			setTimeout(()=>{
 				blog.innerHTML = "";
-				blog.style.backgroundColor = "black";
+				blog.style.backgroundColor = "transparent";
 				blog.style.fontSize = "20px";
 			}, 800)
 		}, 800);

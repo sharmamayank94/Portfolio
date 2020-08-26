@@ -320,7 +320,28 @@ body{
 	#Layer2{
 		display: none;
 	}
+	
 }
+
+
+@media screen and (max-width: 1500px)
+{
+	
+	.introductioncontainer
+	{
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+		align-items: center;
+
+	}
+	.introduction{
+		
+		margin-top: 0px;
+	}
+}
+
+
+
 @keyframes worklink{
 	100%{
 		opacity: 1;
