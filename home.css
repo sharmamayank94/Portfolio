@@ -378,6 +378,11 @@ body{
 	font-family: Fantasy, Georgia;
 }
 
+.contact{
+	
+}
+
+
 .education{
 
 	width: 80%;
@@ -389,6 +394,10 @@ body{
 }
 
 
+
+
+
+/*media*/
 @media screen and (max-width: 1000px)
 {
 	#Layer2{
@@ -429,9 +438,10 @@ body{
 	.introductioncontainer
 	{
 		
-		justify-content: center;
-		align-items: center;
+		
 		flex-direction: column-reverse;
+		justify-content: flex-end;
+		
 	}
 	.blogcontainer{
 
