@@ -371,9 +371,10 @@ body{
 	position: fixed;
 	top: 10%;
 	left: 50%;
+	transform: translate(-50%, -50%);
 	color: black;
 	font-size: 60px;
-	transform: translate(-50%, -50%);
+	
 	font-family: Fantasy, Georgia;
 }
 
@@ -526,9 +527,11 @@ body{
 
 
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 500px)
 {
-
+	.introductioncontainer{
+		padding: 5px;
+	}
 	.imagecontainer
 	{
 		width: 200px;
@@ -575,14 +578,10 @@ body{
 		font-size: 20px;
 	}
 	.blog{
-
 		font-size: 20px;
 	}
 	.blogcontainer{
 		margin: 0px;
-		
-		
-		
 	}
 	.nicetoseeyou{
 		font-size: 20px;
@@ -591,5 +590,5 @@ body{
 	.works{
 		width: 90%;
 	}
-	
+
 }
