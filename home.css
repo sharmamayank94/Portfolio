@@ -379,9 +379,19 @@ body{
 }
 
 .contact{
-	
+	background-color: white;
+	width: 400px;
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+	padding: 100px;
+	opacity: 0.8;
 }
 
+.contact img{
+	height: 80px;
+
+}
 
 .education{
 
@@ -568,7 +578,7 @@ body{
 }
 
 	#mayank, .greeting{
-		font-size: 20px;
+		font-size: 25px;
 	}
 	.option{
 		padding: 10px;
