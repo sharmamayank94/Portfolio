@@ -18,7 +18,7 @@ var type = ()=>{
 			setTimeout(()=>{
 				blog.innerHTML = "";
 				blog.style.backgroundColor = "transparent";
-				blog.style.fontSize = "20px";
+				blog.style.fontSize = "18px";
 			}, 800)
 		}, 800);
 	}
