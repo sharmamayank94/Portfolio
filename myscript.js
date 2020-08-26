@@ -50,7 +50,8 @@ var height = works.offsetHeight;
 document.onscroll = ()=>{
 	
 	seemy.style.opacity = (works.getBoundingClientRect().bottom-300)/height;
-	if(works.getBoundingClientRect().top<letssee.getBoundingClientRect().top ){
+	if(works.getBoundingClientRect().top<letssee.getBoundingClientRect().top && 
+		works.getBoundingClientRect().bottom>letssee.getBoundingClientRect().bottom){
 		
 		letssee.style.display = "block";
 	}
