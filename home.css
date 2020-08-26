@@ -152,6 +152,7 @@ body{
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 
@@ -172,6 +173,7 @@ body{
 }
 
 .introduction{
+	
 	width: 0px;
 	white-space: nowrap;
 	overflow: hidden;
@@ -289,7 +291,7 @@ body{
 	white-space: normal;
 	font-size: 50px;
 	line-height: 30px;	
-
+	background-color: transparent;
 }
 
 @keyframes boxanim{
@@ -313,6 +315,12 @@ body{
 	stroke: turquoise;
 }
 
+@media screen and (max-width: 1500px)
+{
+	#Layer2{
+		display: none;
+	}
+}
 @keyframes worklink{
 	100%{
 		opacity: 1;
