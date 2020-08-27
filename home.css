@@ -153,6 +153,9 @@ body{
 	padding: 5px 10px;
 }
 
+.firstpage{
+	background-color: black;
+}
 .introductioncontainer
 {
 	min-height: 100vh;
@@ -366,10 +369,15 @@ body{
 	opacity: 0;
 	background-color: white;
 	
-	transition: 1s;
+	transition: 1.8s;
 	overflow: hidden;
 }
 
+.works .heading{
+	color: black;
+	padding: 10px;
+	border-bottom: 3px solid grey;	
+}
 .letssee, .letssee2{
 	position: fixed;
 	z-index: 3;
@@ -390,12 +398,14 @@ body{
 .workcontainer:nth-child(odd) {
   margin: 50px;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
 }
 
 .workcontainer:nth-child(even) {
   margin: 50px;
    display: flex;
+   justify-content: space-between;
   flex-direction: row-reverse;
 }
 
@@ -405,6 +415,36 @@ body{
 }
 
 
+.workaboutcontainer .heading2{
+	color: black;
+	font-style: italic;
+	text-align: center;
+}
+.workaboutcontainer .subheading{
+	color: grey;
+	text-align: center;
+}
+.workaboutcontainer p
+{
+	padding: 0px 40px;	
+	color: black;
+	font-size: 20px;
+	font-family: Georgia;
+	line-height: 30px;
+}
+.workaboutcontainer ul{
+	margin: 0px;
+	font-size: 20px;
+	color: black;
+}
+
+.workaboutcontainer button{
+	display: none;
+	padding: 10px;
+	font-size: 15px;
+	background-color: rgb(50, 250, 100);
+	color: white;
+}
 .contact{
 	background-color: white;
 	width: 400px;
@@ -420,41 +460,33 @@ body{
 
 }
 
-.skillsedu{
-
+.experienceskill{
+	display: flex;
+	background-color: rgba(50, 140, 180, 0.7);
 	width: 80%;
 	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	margin-top: 50px;
-	background-color: aqua;
-	opacity: 0.8;
-	
-	padding: 50px;
-	color: black;
-	font-size: 20px;
-	
-	border-radius: 10px;
+	margin-top: 40px;
+	padding: 30px 0px;
+	align-items: flex-start;
+	justify-content: space-around;
 }
-
-.education{
-	margin: 10px;
-	background-color: white;
+.expheading{
+	font-size: 25px;
+	font-weight: bold;
+}
+.experience{
+	margin: 30px;
 	padding: 20px;
-	border-radius: 0px 20px;
-	font-family: Georgia;
+	border-radius: 20px;
+	background-image: linear-gradient(90deg, rgba(50, 140, 190, 0.3), rgba(50, 140, 160, 0));
 }
-.education p{
-	margin: 05px;
+.experience p{
+	max-width: 400px;
+	font-size: 20px;
+	margin: 10px;
 }
-.heading{
-	font-size: 30px;
-	font-weight: 900;
-}
-.institute{
+.subheading{
 	font-style: italic;
-}
-.grade{
 
 }
 .allskillscontainer{
@@ -468,18 +500,124 @@ body{
   width: 100%; /* Full width */
   background-color: #ddd; /* Grey background */
 }
-
+.heading2{
+	font-size: 25px;
+	font-weight: bold;
+}
+.skill{
+	background-color: white;
+	
+	padding: 20px;
+	margin: 10px;
+	border-radius: 10px 10px ;
+}
+.skill p{
+	color: black;
+}
 .skills {
   text-align: right; /* Right-align text */
-  padding-top: 5px; /* Add top padding */
-  padding-bottom: 5px; /* Add bottom padding */
+  padding-top: 0px; /* Add top padding */
+  padding-bottom: 0px; /* Add bottom padding */
   color: white; /* White text color */
+  font-size: 10px;
+}
+
+.skillheading{
+	text-align: center;
+	font-size: 40px;
+	font-family: fantasy;
+	color: white;
+	padding: 10px;
+	border-bottom: 3px solid white;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+.eduachieve{
+
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	background-color: aqua;
+	background-color: rgb(40, 184, 190, 0.9);
+	
+	
+	padding: 50px;
+	color: black;
+	font-size: 20px;
+	
+	border-radius: 10px;
+}
+
+.achievementcontainer{
+	color: white;
+}
+.education{
+	position: relative;
+	margin: 10px;
+	background-color: white;
+	opacity: 1;
+	padding: 20px;
+	border-radius: 0px 20px;
+	font-family: Georgia;
+}
+
+
+.education:after {
+    content: "";
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid white; 
+    position: absolute;
+   	top: 50%;
+   	transform: translateY(-50%);
+   	left: -10px	;
+}
+
+
+
+.education p{
+	margin: 05px;
+}
+.heading{
+	font-size: 30px;
+	font-weight: 900;
+}
+.institute{
+	font-style: italic;
+}
+.grade{
+
 }
 
 footer{
-	
+	margin-top: 30px;
+	background-color: black;
 	padding: 20px;
 }
+.sections{
+	padding: 20px;
+	padding-left: 50px;
+}
+.sections a{
+	font-family: Georgia;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+}
+
 
 .html {width: 90%; background-color: #4CAF50;} /* Green */
 .css {width: 80%; background-color: #2196F3;} /* Blue */
@@ -537,6 +675,15 @@ footer{
 
 		padding: 20px;
 	}
+
+	.workaboutcontainer p{
+		height: 0px;
+
+		overflow: hidden;
+	}
+	.workaboutcontainer button{
+		display: block;
+	}	
 	
 }
 
@@ -581,9 +728,10 @@ footer{
 		padding: 10px;
 	}
 
-	.works{
+	.works, .letssee2{
 		width: 90%;
 	}
+
 	.contact{
 	
 		width: 300px;
@@ -619,7 +767,9 @@ footer{
 
 @media screen and (max-width: 1500px)
 {
-	
+	.workimagecontainer img{
+		width: 380px;
+	}
 	.introductioncontainer
 	{
 		
@@ -629,6 +779,22 @@ footer{
 	.introduction{
 		
 		margin-top: 0px;
+	}
+
+	.experienceskill{
+		flex-direction: column;
+		align-items: center;
+		padding: 20px 0px;
+	}
+
+
+	.eduachieve{
+		flex-direction: column;
+		align-items: center;
+		padding: 20px 0px;
+	}
+	.allskillscontainer{
+		width: 80%;
 	}
 }
 
@@ -694,8 +860,100 @@ footer{
 		font-size: 20px;
 	}
 
-	.works{
-		width: 90%;
+	.heading2{
+		font-size: 20px;
+	}
+	.workimagecontainer img{
+		width: 260px;
 	}
 
+	.experienceskill{
+		width: 95%;
+		justify-content: center;
+
+	}
+	.experiencecontainer{
+		padding: 10px 5px;
+	}
+	.allskillscontainer{
+		width: 100%;
+	}
+	.skillheading{
+		font-size: 25px;
+	}
+	.expheading{
+		font-size: 22px;
+	}
+	.experience{
+		padding: 10px 5px;
+		margin: 10px 0px;
+		
+	}
+	.experience p{
+		font-size: 16px;
+	}
+	.eduachieve{
+		padding: 10px 5px;
+		width: 95%;
+	}
+	.educationcontainer{
+		margin: 10px 5px;
+	}
+	.education{
+		
+		padding: 10px 0px;
+	}
+	.education p{
+		font-size: 15px;
+			
+	}
+}
+@media screen and (max-width: 1200px)
+{
+
+
+	.works{
+		width: 90%;
+		padding: 20px 10px;
+	}
+	.letssee2{width: 90%;}
+	.workcontainer:nth-child(odd) {
+  	
+	  	margin: 0px;
+	  	display: flex;
+	  justify-content: center;
+	  flex-direction: column;
+	  padding: 0px;
+	  
+	  margin-top: 40px;
+}
+
+.workcontainer:nth-child(even) {
+		margin: 0px;
+	  	padding: 0px;	
+	  	
+	   display: flex;
+	   justify-content: center;
+	  flex-direction: column;
+	  margin-top: 40px;
+}
+	.workimagecontainer  {
+		display: block;
+		justify-content: center;
+		text-align: center;
+		
+
+	}
+	.workaboutcontainer p
+	{
+		padding: 0px 10px;	
+		color: black;
+		font-size: 15px;
+		font-family: Georgia;
+		line-height: 30px;
+	}
+	.heading{
+		font-size: 20px;
+	}
+	
 }

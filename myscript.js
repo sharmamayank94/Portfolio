@@ -76,3 +76,20 @@ document.onscroll = ()=>{
 		//x.style.backgroundColor = "black";
 	}
 }
+
+var states = [true, true, true, true, true];
+
+var readmore = (element, id)=>{
+	if(states[element.slice(4,)] == true)
+	{
+		document.querySelector("#"+id).innerHTML = "Know Less";
+		document.querySelector("#"+element).style.height = "auto";
+		states[element.slice(4,)] = false;
+	}
+	else
+	{
+		document.querySelector("#"+element).style.height = "0px";
+		document.querySelector("#"+id).innerHTML = "Know More";
+		states[element.slice(4,)] = true;
+	}
+}
