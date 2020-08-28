@@ -19,6 +19,8 @@ var type = ()=>{
 				blog.innerHTML = "";
 				blog.style.backgroundColor = "transparent";
 				blog.style.fontSize = "18px";
+				blog.innerHTML = text2;
+				blog.innerHTML += "<br/>";
 			}, 800)
 		}, 800);
 	}
@@ -26,23 +28,15 @@ var type = ()=>{
 }
 
 var text2 = "I was born and raised in Bhopal. Currently I am pursuing my Bachelor of Technology in Computer Science and Engineering from University Institute of Technology, RGPV, Bhopal. I started coding in C++ when I was in 8th standard, although I took a break in 9th standard and started doing a little web development. I took a break from it too in 10th standard and started to focus solely on my studies, but my passion for programming was lit again as I stepped in 2nd year of my college.";
-var j = 0;
-var type2 = ()=>{
-	if(j<text2.length)
-	{
-		blog.innerHTML+=text2[j++];
-		setTimeout(type2, 10);
-	}	
-	else
-	{
-		blog.innerHTML+="<br/>";
-	}
-}
+
+
 setTimeout(type, 8000);
-setTimeout(type2, 15000);
+
 
 
 var works = document.querySelector(".works");
+var experienceskill = document.querySelector(".experienceskill");
+var eduachieve = document.querySelector(".eduachieve");
 var letssee = document.getElementsByClassName("letssee")[0];
 var letssee2 = document.getElementsByClassName("letssee2")[0];
 var seemy = document.getElementsByClassName("seemy")[0];
@@ -52,7 +46,7 @@ var height = works.offsetHeight;
 document.onscroll = ()=>{
 	
 	seemy.style.opacity = (works.getBoundingClientRect().bottom-300)/height;
-	if(works.getBoundingClientRect().top<letssee.getBoundingClientRect().top
+	if(works.getBoundingClientRect().top<=letssee.getBoundingClientRect().top
 	 && works.getBoundingClientRect().bottom>100 ){
 		
 		letssee.style.display = "block";
@@ -66,15 +60,36 @@ document.onscroll = ()=>{
 	if(works.getBoundingClientRect().top<window.innerHeight )
 	{
 		works.style.opacity = 0.9;
-		var x = document.getElementsByTagName("BODY")[0];
-		//x.style.backgroundImage = "url('background.jpg')";
+		
+		
 	}
 	else if(works.getBoundingClientRect().top>window.innerHeight)
 	{
 		works.style.opacity = 0;	
-		//x.style.backgroundImage = "url('')";
-		//x.style.backgroundColor = "black";
+		
 	}
+
+	if(experienceskill.getBoundingClientRect().top<window.innerHeight*(2/3)) experienceskill.style.opacity = 1;
+		
+		
+	
+	else if(experienceskill.getBoundingClientRect().top>window.innerHeight) experienceskill.style.opacity = 0;
+	
+			
+		
+	
+
+	if(eduachieve.getBoundingClientRect().top<window.innerHeight*(2/3))
+	
+		eduachieve.style.opacity = 1;
+		
+		
+	
+	else if(eduachieve.getBoundingClientRect().top>window.innerHeight)
+	
+		eduachieve.style.opacity = 0;	
+		
+	
 }
 
 var states = [true, true, true, true, true];
@@ -92,4 +107,12 @@ var readmore = (element, id)=>{
 		document.querySelector("#"+id).innerHTML = "Know More";
 		states[element.slice(4,)] = true;
 	}
+}
+
+function displaynavbar(){
+	document.querySelector(".navbar").style.display = "flex";
+}
+
+function closenavbar(){
+	document.querySelector(".navbar").style.display = "";	
 }

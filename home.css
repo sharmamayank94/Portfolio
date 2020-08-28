@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes colorchange
 {
 	100%{background-color: white;}
@@ -107,11 +111,12 @@ body{
 .welcomecontainer
 {
 	height: 100vh;
+	line-height: 0px;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
 	justify-content: center;
-
+	margin: 0px;
 	animation: anim forwards;
 	animation-duration: 2s;
 	align-items: center;
@@ -134,11 +139,43 @@ body{
 	width: 500px;
 	margin: auto;
 }
+
+.navbarbutton{
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	top: 0%;
+	padding: 10px;
+}
+
+.navbarbutton button{
+
+	border: none;
+	background-color: transparent;
+	color: grey;
+	font-size: 30px;
+}
+.closenavbar{
+	display: none;
+	overflow: hidden;
+	
+	padding: 10px;
+}
+.closenavbar button{
+	border: none;
+	background-color: transparent;
+	color: grey;
+	font-size: 30px;
+
+}
 .navbar
 {
+
 	padding: 20px;
 	display: flex;
+	flex-direction: row;
 	justify-content: flex-end;
+	
 }
 
 .option{
@@ -154,12 +191,15 @@ body{
 }
 
 .firstpage{
+	margin: 0px;
 	background-color: black;
+	min-height: 100vh;
 }
 .introductioncontainer
 {
-	min-height: 100vh;
-	margin-top: 20px;
+	
+	margin-top: 0px;
+	padding-top: 30px;
 	display: flex;
 
 	justify-content: space-around;
@@ -303,7 +343,7 @@ body{
 .blog{
 	white-space: normal;
 	font-size: 40px;
-		
+	font-family: arial;
 	background-color: transparent;
 }
 
@@ -348,7 +388,7 @@ body{
 	font-size: 30px;
 	color: black;
 	animation: worklink forwards;
-	animation-delay: 22s;
+	animation-delay: 15s;
 	animation-duration: 1s;
 	transition: 0.5s;
 }
@@ -362,6 +402,7 @@ body{
 
 .works{
 	margin: auto;
+	margin-top: 20px;
 	padding: 50px;
 	padding-top: 150px;
 	
@@ -451,8 +492,14 @@ body{
 	text-align: center;
 	margin: auto;
 	margin-top: 20px;
-	padding: 100px;
+	padding: 30px;
+	color: black;
 	opacity: 0.8;
+}
+.contact div{
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	color:rgb(109, 108, 108);
+	margin: 50px;
 }
 
 .contact img{
@@ -461,6 +508,8 @@ body{
 }
 
 .experienceskill{
+	opacity: 0;
+	transition: 2s;
 	display: flex;
 	background-color: rgba(50, 140, 180, 0.7);
 	width: 80%;
@@ -541,7 +590,7 @@ body{
 
 
 .eduachieve{
-
+	transition: 2s;
 	width: 80%;
 	margin: auto;
 	display: flex;
@@ -606,19 +655,39 @@ footer{
 	margin-top: 30px;
 	background-color: black;
 	padding: 20px;
+	display: flex;
+	justify-content: space-around;
+	
 }
+.footersection{
+	
+
+}
+footer img{
+	display: block;
+	
+	width: 800px;
+}
+
 .sections{
+
 	padding: 20px;
 	padding-left: 50px;
 }
 .sections a{
-	font-family: Georgia;
+	font-family: arial, Georgia;
 	text-decoration: none;
 	font-size: 20px;
 	color: white;
 }
 
-
+.copyright{
+	font-family: arial;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	background-color: black;
+}
 .html {width: 90%; background-color: #4CAF50;} /* Green */
 .css {width: 80%; background-color: #2196F3;} /* Blue */
 .js {width: 65%; background-color: #f44336;} /* Red */
@@ -684,7 +753,9 @@ footer{
 	.workaboutcontainer button{
 		display: block;
 	}	
-	
+	.footersection img{
+		width: 300px;
+	}
 }
 
 @media screen and (max-width: 600px)
@@ -750,7 +821,36 @@ footer{
 		font-size: 50px;
 	}
 
+	.navbarbutton{
+		display: block;
+	}
 
+	.closenavbar{
+		display: block;
+		position: absolute;
+		top: 0%;
+		right: 0%;
+	
+	}
+
+	.navbar{
+		position: fixed;
+		z-index: 3;
+		top:0%;
+		height: 100vh;
+		background-color: black;
+		width: 70%;
+		flex-direction: column;
+		justify-content: flex-start;
+		display: none;
+	}
+	.option a{
+	
+	
+	
+		border: none;
+		padding: 5px 0px;
+	}
 	.letssee{
 	
 		font-size: 25px;
@@ -758,7 +858,9 @@ footer{
 	}
 
 
-
+	footer{
+		flex-wrap: wrap-reverse;
+	}
 
 }
 
@@ -836,13 +938,7 @@ footer{
 	.option{
 		padding: 10px;
 	}
-	.option a{
-		color: white;
-		text-decoration: none;
-		font-size: 15px;
-		border: 2px solid white;
-		padding: 5px 0px;
-	}
+	
 	.textwriting{
 		font-size: 20px;
 	}

@@ -179,24 +179,43 @@
 </div>
 </div>
 
+<div class="navbarbutton">
+		<button onclick = "displaynavbar()">&#8801;</button>
+</div>
 
 <div class="firstpage">
+	
 	<div class="navbar">
-	<div class="option">
-		<a href = "#">Work Experience</a>
+		<div class="closenavbar">
+			<button onclick = "closenavbar()">X</button>
+		</div>
+		<div class="option">
+				<a href = "#project">Projects</a>
+			
+		</div>
+		<div class="option">
+				<a href = "#contact">Contact</a>
+			
+		</div>
+		<div class="option">
+			<a href = "#experiencenskills">Skills</a>
+			
+		</div>
+		<div class="option">
+			<a href = "#experiencenskills">Work Experience</a>
+		</div>
+		<div class="option">
+			<a href = "#edunachieve">Achievements</a>
+		</div>
+		<div class="option">
+			<a href = "#edunachieve">Education</a>
+		</div>
 	</div>
-	<div class="option">
-		<a href = "#">Projects</a>
-	</div>
-	<div class="option">
-		<a href = "#">Skills</a>
-	</div>
-</div>
 
 
 
 	
-	<div class="introductioncontainer">
+	<div class="introductioncontainer" >
 
 		<div class="introduction">
 			<p class="greeting">Hi,</p>
@@ -215,12 +234,12 @@
 
 	
 			<div class="worklink">
-				<a href = "#"> Let's See My Work </a>
+				<a href = "#project"> Let's See My Work </a>
 			</div>
 
 		</div>
 		<div class="imagecontainer">
-			<img src = "./myself.jpg">	
+			<img src = "./myself3.jpg">	
 		</div>
 
 		
@@ -262,7 +281,7 @@
 
 
 
-<div class="works">
+<div class="works" id = "project">
 	<div class="letssee">
 		LETS <span class = "seemy">SEE MY</span> WORK
 	</div>
@@ -406,12 +425,16 @@
 
 </div>
 
-<div class="contact">
+<div class="contact" id = "contact">
+	<div class = "heading">CONTACT</div>
 	<a href = "mailto:sharmamayank941@gmail.com"><img src = "gmail.png"></a>
+
+
+
 </div>
 
 
-<div class="experienceskill">
+<div class="experienceskill" id = "experiencenskills">
 	<div class="allskillscontainer">
 		<div class="skillheading">
 			My Skills
@@ -444,6 +467,14 @@
 			  <div class="skills php">&nbsp;</div>
 			</div>
 		</div>
+		<div class="skill">
+			
+			<p class = "heading2">DBMS</p>
+			<div class="skillcontainer">
+			  <div class="skills js">&nbsp;</div>
+			</div>
+		</div>
+
 	</div>
 	<div class="experiencecontainer">
 		<div class="skillheading">
@@ -501,7 +532,7 @@
 </div>
 
 
-<div class="eduachieve">
+<div class="eduachieve" id = "edunachieve">
 	
 	<div class="achievementcontainer">
 		<div class="skillheading">
@@ -571,27 +602,37 @@
 
 
 <footer>
-	<div class="sections">
-		<a href = "">My Projects</a>
+	<div class="footersection">
+		<div class="sections">
+		<a href = "#project">My Projects</a>
+		</div>
+		<div class="sections">
+			<a href = "#contact">Contact</a>
+		</div>
+		<div class="sections">
+			<a href = "#experiencenskills">Skills</a>
+		</div>
+		<div class="sections">
+			<a href = "#experiencenskills">Work Experience</a>
+		</div>
+		<div class="sections">
+			<a href = "#edunachieve">Achievements</a>
+		</div>
+		<div class="sections">
+			<a href = "#edunachieve">Education</a>
+		</div>
 	</div>
-	<div class="sections">
-		<a href = "">Skills</a>
+	<div class="footersection">
+		
+			<img src = "all.svg" />	
+		
 	</div>
-	<div class="sections">
-		<a href = "">Work Experience</a>
-	</div>
-	<div class="sections">
-		<a href = "">Achievements</a>
-	</div>
-	<div class="sections">
-		<a href = "">Education</a>
-	</div>
-
+	
 </footer>
 
-
-
-
+<div class="copyright">
+	&#169; Mayank Sharma
+</div>
 	
 </body>
 
