@@ -454,7 +454,11 @@ body{
 .workimagecontainer img{
 	max-width: 450px;
 }
-
+.workaboutcontainer a{
+	font-size: 18px;
+	text-align: center;
+	display: block;
+}
 
 .workaboutcontainer .heading2{
 	color: black;
@@ -581,8 +585,23 @@ body{
 	margin-bottom: 20px;
 }
 
+.skillcardcontainer{
+	margin: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
 
-
+.skillcard{
+	margin: 10px;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 5px;
+	background-image: linear-gradient(-70deg, rgb(30, 100, 250), rgb(100, 50, 250));
+	color: white;
+}
 
 
 
@@ -1052,4 +1071,11 @@ footer img{
 		font-size: 20px;
 	}
 	
+}
+
+@media screen and (max-width: 370px)
+{
+	.letssee{
+		font-size: 20px;
+	}
 }
