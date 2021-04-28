@@ -1,0 +1,147 @@
+body{
+	margin: 0;
+
+	background-color: rgb(245, 245, 245);
+	/*background-image: url('./background.jpg');*/
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.navbar{
+	
+	position: relative;	
+	z-index: 2;
+	background-color: rgb(10, 10, 30);
+	/*background-color: white;*/
+	box-shadow: 4px 10px 10px gray;
+	padding: 20px 0px;
+}
+.nav_option{
+	margin-left: 70px;
+	display: inline-block;
+}
+
+.nav_option_anchor{
+	font-size: 18px;
+	color: rgb(200, 200, 200);
+	font-family: Raleway  ;
+	text-decoration: none;
+}
+
+.mainpageplaceholder{
+	
+	top: 50px;
+	display: flex;
+}
+
+
+.image{
+	margin-left: 10px;
+	
+	
+	background-color: white;
+	
+	display: inline-block;
+	
+	overflow: hidden;
+}
+
+.profile{
+	padding: 40px;
+	width: 20%;
+	height: 78vh;
+	background-color: white;
+	box-shadow: 3px 2px 14px gray;
+}
+
+.image img{
+	width: 100%;
+	
+}
+
+.mainpage{
+	width: 80%;
+	/*background-color: green;*/
+	margin-left: 40px;
+	box-shadow: box-shadow: 3px 2px 14px gray;
+}
+
+.nameholder{
+	
+	display: flex;
+	margin-top: 40px;
+	align-items: center;
+	justify-content: center;
+}
+
+.name{
+
+	font-size: 75px;
+	color: rgb(60, 60, 60);
+	font-family: Raleway, sans-serif;
+}
+.name_bottom{
+	font-size: 25px;
+	color: rgb(60, 60, 60);
+	font-family: Raleway, sans-serif;
+
+}
+
+.nav_section_holder{
+	margin: 20px;
+}
+.center_child{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav-options-holder{
+	display: flex;
+
+}
+.nav-options-card-holder{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+	width: 90px;
+	height: 90px;
+	border-radius: 100%;
+	padding: 50px;
+	background-color: white;
+	box-shadow: 0px 0px  5px 5px rgb(200, 200, 200);
+}
+.nav-options-card{
+	
+	font-size: 25px;
+	font-family: Raleway, sans-serif;
+	flex-wrap: wrap;
+	
+}
+
+.bar1{
+	background-color: skyblue;
+	height: 40px;
+	width: 60%;
+	box-shadow: 4px 4px 10px rgb(40, 40, 40);
+	position: relative;
+	z-index: 10;
+}
+
+.bar2{
+	position: relative;
+	z-index: 9;
+	background-color: rgb(80, 100, 150);
+	height: 40px;
+	width: 80%;
+	box-shadow: 4px 4px 4px rgb(40, 40, 40);
+}
+
+.bar3{
+	position: relative;
+	z-index: 8;
+	background-color: rgb(50, 60, 80);
+	height: 40px;
+	width: 70%;
+	box-shadow: 4px 4px 4px gray;
+}
