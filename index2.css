@@ -28,20 +28,16 @@ body{
 }
 
 .mainpageplaceholder{
-	
 	top: 50px;
 	display: flex;
+	height: 100vh;
 }
 
 
 .image{
 	margin-left: 10px;
-	
-	
 	background-color: white;
-	
 	display: inline-block;
-	
 	overflow: hidden;
 }
 
@@ -81,6 +77,8 @@ body{
 	font-family: Raleway, sans-serif;
 }
 .name_bottom{
+	
+	line-height: 35px;
 	font-size: 25px;
 	color: rgb(60, 60, 60);
 	font-family: Raleway, sans-serif;
@@ -146,7 +144,7 @@ body{
 	background-color: rgb(50, 60, 80);
 	height: 40px;
 	width: 70%;
-	box-shadow: 4px 4px 4px gray;
+	box-shadow: 4px 4px 4px rgb(40, 40, 40);
 }
 
 .aboutflash{
@@ -156,4 +154,38 @@ body{
 	background-color: white;
 	right: 0px;
 	width: 0px;
+}
+
+.sidebar{
+	padding: 0px;
+	position: fixed;
+	right: -200px;
+	top: 50vh;
+	transform: rotate(-90deg);
+
+	display: flex;
+	display: none;
+}
+.sidebar_card{
+	font-family: Raleway;
+	border-radius: 18px 18px 0px 0px;
+	border: 2px solid black;
+	box-shadow: -5px -5px 5px gray;
+	padding: 10px;
+	background-color: white;
+	position: relative;
+}
+
+
+
+.skills-page{
+	display: flex;
+	
+	height: 100vh;
+	align-items:  center;
+	justify-content: center;
+}
+
+.skill-bar-holder{
+	width: 80%;	
 }
