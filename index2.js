@@ -6,8 +6,8 @@ function bringBack(obj)
 		var delay = Math.random();		
 		obj[i].style.transitionDelay = delay + "s";
 		obj[i].style.transitionDuration = "1.5s";
-		obj[i].style.width = "90px";
-		obj[i].style.height = "90px";
+		obj[i].style.width = "80px";
+		obj[i].style.height = "80px";
 	}
 }
 var colors = ["red", "green", "blue", "yellow", "orange"]
@@ -65,7 +65,18 @@ function aboutFlash()
 	}, 1000);
 }
 
+function skillflash(){
+	document.querySelector(".mainpageplaceholder").style.height = "0px";
+	document.querySelector(".skill-bar-holder").classList.add("skill-bar-holder-animate");
+}
 
-window.onScroll = ()=>{
-	
+
+var skillsPage = document.querySelector(".skills-page");
+window.onscroll = ()=>{
+
+	if(skillsPage.getBoundingClientRect().y <= window.innerHeight-500)
+	{
+		document.querySelector(".skill-bar-holder").classList.add("skill-bar-holder-animate");
+	}
+
 }
