@@ -33,13 +33,14 @@ bringBack(circularCards);
 
 borderColor(circularCards);
 borderColor(sidebarCards);
+var sidebar = document.querySelector(".sidebar");
 
 function aboutFlash()
 {
 	var obj = document.querySelector(".aboutflash");
 	var nameBottom = document.querySelector(".name_bottom");
 	var navSectionHolder = document.querySelector(".nav_section_holder");
-	var sidebar = document.querySelector(".sidebar");
+	
 	obj.style.transitionDuration = "0.5s";
 	obj.style.width = "100%";
 	
@@ -64,22 +65,75 @@ function aboutFlash()
 		
 	}, 1000);
 }
-
+var mainPage = document.querySelector(".mainpageplaceholder");
+var skillsPage = document.querySelector(".skills-page");
+var educationPage = document.querySelector(".education-page");
 function skillflash(){
-	document.querySelector(".mainpageplaceholder").style.height = "0px";
+	mainPage.style.height = "0px";
 	document.querySelector(".skill-bar-holder").classList.add("skill-bar-holder-animate");
+	educationPage.style.height = "0px";
+	sidebar.style.display = "flex";
 }
 
+function educationFlash(){
+	mainPage.style.height = "0px";
+	skillsPage.style.height = "0px";
+	showsvgs();
+	sidebar.style.display = "flex";
+}
 
-var skillsPage = document.querySelector(".skills-page");
+function reset()
+{
+	mainPage.style = null;
+	skillsPage.style = null;
+	educationPage.style = null;
+	sidebar.style = null;
+}
+
 window.onscroll = ()=>{
 
 	if(skillsPage.getBoundingClientRect().y <= window.innerHeight-500)
 	{
 		document.querySelector(".skill-bar-holder").classList.add("skill-bar-holder-animate");
 	}
+	if(educationPage.getBoundingClientRect().y <= window.innerHeight-500)
+	{
+		showsvgs();
+	}
 }
 
+var svgs = ['g1408', 'g1287', 'g1343', 'g1399'];
 
-var element = document.getElementById("g1287");
-element.style.height = "0px";
+function hidesvgs()
+{
+	for(var element of svgs)
+	{
+		var k = document.getElementById(element);
+
+		k.style.opacity = '0';
+		k.style.transitionDuration = "0.4s";
+	}
+}
+
+function show(element)
+{
+	var k = document.getElementById(element);
+	k.style.opacity = "1";
+}
+function showsvgs()
+{
+	let gap = 100;
+	for(var element of svgs)
+	{
+		((element)=>{
+			console.log(element);
+			setTimeout(()=>{
+				show(element);
+			}, 500 + gap);
+		})(element);
+		gap += 300;
+	}
+}
+
+hidesvgs();
+

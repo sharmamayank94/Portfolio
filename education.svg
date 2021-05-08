@@ -1,128 +1,40 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-	<link rel = "stylesheet" href = "./index2.css">
-	<title> Portfolio </title>
-</head>
-<body>
-	<div class="navbar">
-		<div class="nav_option">
-			<a href = "#" class = "nav_option_anchor"> Projects </a>
-		</div>
-		<div class="nav_option">
-			<a href = "#" class = "nav_option_anchor"> Education </a>
-		</div>
-		<div class="nav_option">
-			<a href = "#" class = "nav_option_anchor"> Skills </a>
-		</div>
-	</div>
-	<div class="mainpageplaceholder">
-		<div class="profile">
-			<div class="image">	
-				<img src = "./myself-circle.png"/>
-			</div>
-			
-		</div>
-
-
-		<div class="mainpage">
-			<div class="nameholder">
-				<div class="name">
-					Mayank Sharma
-				</div>
-			</div>
-
-			<div class="nameholder">
-				
-				<div class="name_bottom">
-					Software Engineer | Competitive Programmer
-				</div>
-			</div>
-
-			<div class="nav_section_holder">
-				
-			
-				<div class="center_child">
-					
-					<div class = "nav-options-holder">
-
-						
-						<div class = "nav-options-card-holder">
-							<div class="nav-options-card">Projects</div>
-						</div>
-
-						<div class = "nav-options-card-holder" onclick="educationFlash()">
-							<div class="nav-options-card">Education</div>
-						</div>
-
-						<div class = "nav-options-card-holder"onclick="aboutFlash()" >
-							<div class="nav-options-card" >About</div>
-							
-						</div>
-
-
-					</div>
-				</div>
-
-				<div class="center_child">
-					
-					<div class = "nav-options-holder">
-
-						
-						<div class = "nav-options-card-holder">
-							<div class="nav-options-card">Experience</div>
-						</div>
-
-						<div class = "nav-options-card-holder" onclick="skillflash()">
-							<div class="nav-options-card">Skills</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="aboutflash"></div>
-		</div>
-	</div>
-
-	<div class="sidebar">
-		<div class="sidebar_card" onclick="reset()">Back</div>
-		<div class="sidebar_card">Experience</div>
-		<div class="sidebar_card">About</div>
-		<div class="sidebar_card">Education</div>
-		<div class="sidebar_card">Projects</div>
-		<div class="sidebar_card">Skills</div>
-	</div>
-
-	<div class = "skills-page">
-		<div class="skill-bar-holder">
-			<div class="bar1"></div>
-			<div class="bar2"></div>
-			<div class="bar3"></div>
-			<div class="bar4"></div>
-			<div class="bar5"></div>
-			<div class="bar6"></div>
-			<div class="bar7"></div>
-		</div>
-	</div>
-	<div class="education-page">
-		
-		<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   width="1920px"
-   height="700px"
-   viewBox="0 0 200 70"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="198.50768mm"
+   height="83.929787mm"
+   viewBox="0 0 198.50768 83.929787"
    version="1.1"
-   id="svg8">
+   id="svg8"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="education.svg">
   <defs
      id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#d3d1cf"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="340.1243"
+     inkscape:cy="87.485284"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -136,6 +48,8 @@
     </rdf:RDF>
   </metadata>
   <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-7.6092599,-76.328054)">
     <g
@@ -144,15 +58,18 @@
       <path
          style="fill:#f9f6ff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="M -0.80180856,130.6948 45.970359,95.949758 86.862596,89.53529 106.106,98.355186 l 19.24341,9.354434 31.00326,-17.907058 26.19241,8.953528 26.19242,33.54232 z"
-         id="path837" />
+         id="path837"
+         sodipodi:nodetypes="ccccccccc" />
       <path
          style="fill:#fff6ff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 135.77291,133.50113 46.77217,-34.74504 40.89224,-6.414468 19.2434,8.819898 19.24341,9.35443 31.00326,-17.907056 26.19241,8.953526 26.19242,33.54232 z"
-         id="path1401" />
+         id="path1401"
+         sodipodi:nodetypes="ccccccccc" />
       <path
          style="fill:#fff6ff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m -133.72411,132.82075 46.772166,-34.745028 40.89224,-6.414459 19.2434,8.819877 19.24341,9.35443 31.00326,-17.907035 26.19241,8.953505 26.19242,33.54232 z"
-         id="path1403" />
+         id="path1403"
+         sodipodi:nodetypes="ccccccccc" />
     </g>
     <g
        id="g1287"
@@ -747,14 +664,3 @@
     </g>
   </g>
 </svg>
-
-	</div>
-	<script src = "index2.js"></script>
-</body>
-
-<!-- 
-projects
-about
-experience
-education
-skills -->

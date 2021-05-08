@@ -10,7 +10,7 @@ body{
 	width: 100%;	
 	z-index: 2;
 	background-color: rgb(10, 10, 30);
-	box-shadow: 4px 10px 10px gray;
+	box-shadow: 4px 10px 10px rgb(100, 100, 100);
 	padding: 20px 0px;
 }
 .nav_option{
@@ -189,10 +189,10 @@ body{
 .sidebar{
 	padding: 0px;
 	position: fixed;
-	right: -200px;
+	right: -230px;
 	top: 50vh;
 	transform: rotate(-90deg);
-
+	z-index: 10;
 	display: flex;
 	display: none;
 }
@@ -209,6 +209,7 @@ body{
 
 
 .skills-page{
+	overflow: hidden;
 	display: flex;
 	height: 100vh;
 	align-items:  center;
@@ -225,12 +226,13 @@ body{
 .skill-bar-holder-animate{
 	width: 80%;	
 }
-.education-image-container{
+.education-page{
 	background-color: skyblue;
 	position: relative;
+	overflow: hidden;
 	height: 100vh;
 }
-.education-image{
+svg{
 	width: 100%;
 	position: absolute;
 	bottom: 0px;
