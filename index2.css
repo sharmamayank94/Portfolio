@@ -225,3 +225,13 @@ body{
 .skill-bar-holder-animate{
 	width: 80%;	
 }
+.education-image-container{
+	background-color: skyblue;
+	position: relative;
+	height: 100vh;
+}
+.education-image{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}

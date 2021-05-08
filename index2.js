@@ -78,5 +78,8 @@ window.onscroll = ()=>{
 	{
 		document.querySelector(".skill-bar-holder").classList.add("skill-bar-holder-animate");
 	}
-
 }
+
+
+var element = document.getElementById("g1287");
+element.style.height = "0px";
