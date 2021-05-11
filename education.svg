@@ -12,7 +12,7 @@
    viewBox="0 0 210.944 115.03378"
    version="1.1"
    id="svg8"
-   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   inkscape:version="1.0.2 (394de47547, 2021-03-26)"
    sodipodi:docname="education.svg">
   <defs
      id="defs2">
@@ -61,10 +61,10 @@
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1001"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-width="1600"
+     inkscape:window-height="836"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -83,22 +83,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-0.46619146,-52.652092)">
-    <text
-       xml:space="preserve"
-       id="text1180"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0.177271px;white-space:pre;shape-inside:url(#rect1182);fill:#c3f4ff;fill-opacity:1;stroke:none;"
-       transform="translate(-6.419841,-0.54528383)"><tspan
-         x="78.242188"
-         y="64.311715"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';fill:#c3f4ff;fill-opacity:1">EDUCATION</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text1152"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0.177271px;white-space:pre;shape-inside:url(#rect1154);fill:#ffffff;fill-opacity:1;stroke:none;"
-       transform="translate(-6.419841,-0.01611716)"><tspan
-         x="78.242188"
-         y="64.311715"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'High Tower Text';-inkscape-font-specification:'High Tower Text';fill:#ffffff">EDUCATION</tspan></tspan></text>
     <g
        id="g1237">
       <rect
@@ -754,12 +738,7 @@
     <g
        id="g1605">
       <g
-         aria-label="B Tech. - CSE 8.23 CGPA
-University Institute of Technology, RGPV
-
-
-
-"
+         aria-label="B Tech. - CSE 8.23 CGPA University Institute of Technology, RGPV    "
          transform="translate(-5.6126601,6.3661175)"
          id="text1158"
          style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1160);fill:#000000;fill-opacity:1;stroke:none">
@@ -981,8 +960,7 @@ University Institute of Technology, RGPV
            id="path1406" />
       </g>
       <g
-         aria-label="12th  82%
-A.T. Shahni Hr. Sec. School"
+         aria-label="12th  82% A.T. Shahni Hr. Sec. School"
          transform="translate(-6.1471992,28.0633)"
          id="text1205"
          style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1207);fill:#000000;fill-opacity:1;stroke:none">
@@ -1108,8 +1086,7 @@ A.T. Shahni Hr. Sec. School"
            id="path1297" />
       </g>
       <g
-         aria-label="10th  84.3%
-Christ Memorial Hr. Sec. School"
+         aria-label="10th  84.3% Christ Memorial Hr. Sec. School"
          transform="translate(-7.2162773,48.910323)"
          id="text1216"
          style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1219);fill:#000000;fill-opacity:1;stroke:none">

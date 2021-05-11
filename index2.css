@@ -258,7 +258,39 @@ body{
 }
 
 .projects-page{
-	height: 100vh;
+	
+}
+
+.project-holder{
+	margin: 10px;
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+	grid-column-gap: 50px;
+	grid-row-gap: 50px;
+}
+
+.project-holder{
+
+}
+
+.project-holder img{
+	width: 250px;
+}
+
+.project{
+	box-shadow: 2px 5px 8px rgb(200, 220, 255);
+	padding: 20px;
+}
+
+.project-details{
+	margin-top: 20px;
+	font-size: 16px;
+
+	line-height: 22px;
 }
 
 .experience-page{
