@@ -1,133 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-	<link rel = "stylesheet" href = "./index2.css">
-	<title> Portfolio </title>
-</head>
-<body>
-	<div class="navbar">
-		<div class="nav_option">
-			<a href = "#" class = "nav_option_anchor"> Projects </a>
-		</div>
-		<div class="nav_option">
-			<a href = "#" class = "nav_option_anchor"> Education </a>
-		</div>
-		<div class="nav_option">
-			<a href = "#" class = "nav_option_anchor"> Skills </a>
-		</div>
-	</div>
-	<div class="mainpageplaceholder">
-		<div class="profile">
-			<div class="image">	
-				<img src = "./myself-circle.png"/>
-			</div>
-			
-		</div>
-
-
-		<div class="mainpage">
-			<div class="nameholder">
-				<div class="name">
-					Mayank Sharma
-				</div>
-			</div>
-
-			<div class="nameholder">
-				
-				<div class="name_bottom">
-					Software Engineer | Competitive Programmer
-				</div>
-			</div>
-
-			<div class="nav_section_holder">
-				
-			
-				<div class="center_child">
-					
-					<div class = "nav-options-holder">
-
-						
-						<div class = "nav-options-card-holder">
-							<div class="nav-options-card">Projects</div>
-						</div>
-
-						<div class = "nav-options-card-holder" onclick="educationFlash()">
-							<div class="nav-options-card">Education</div>
-						</div>
-
-						<div class = "nav-options-card-holder"onclick="aboutFlash()" >
-							<div class="nav-options-card" >About</div>
-							
-						</div>
-
-
-					</div>
-				</div>
-
-				<div class="center_child">
-					
-					<div class = "nav-options-holder">
-
-						
-						<div class = "nav-options-card-holder">
-							<div class="nav-options-card">Experience</div>
-						</div>
-
-						<div class = "nav-options-card-holder" onclick="skillflash()">
-							<div class="nav-options-card">Skills</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="aboutflash"></div>
-		</div>
-	</div>
-
-	<div class="sidebar">
-		<div class="sidebar_card" onclick="reset()">Back</div>
-		<div class="sidebar_card">Experience</div>
-		<div class="sidebar_card">About</div>
-		<div class="sidebar_card">Education</div>
-		<div class="sidebar_card">Projects</div>
-		<div class="sidebar_card">Skills</div>
-	</div>
-
-
-	<div class = "skills-page">
-		<div class="center_child">
-			<div class="pageheading">
-				Skills
-			</div>
-		</div>
-		
-
-		<div class="skill-bar-holder">
-			<div class="bar1"><div class="skillset">Java</div></div>
-			<div class="bar2"><div class="skillset">JavaScript</div></div>
-			<div class="bar3"><div class="skillset">Python</div></div>
-			<div class="bar4"><div class="skillset">C++</div></div>
-			<div class="bar5"><div class="skillset">Machine Learning</div></div>
-			<div class="bar6"><div class="skillset">Android Application</div></div>
-			<div class="bar7"><div class="skillset">Web Development</div></div>
-		</div>
-	</div>
-	<div class="education-page">
-		
-	
-		<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   width="100%"
-   
-   viewBox="0 0 210.944 105.03378"
+   width="210.944mm"
+   height="115.03378mm"
+   viewBox="0 0 210.944 115.03378"
    version="1.1"
    id="svg8">
   <defs
@@ -847,11 +727,11 @@
        id="g1605">
       <g
          aria-label="B Tech. - CSE 8.23 CGPA
-	University Institute of Technology, RGPV
+University Institute of Technology, RGPV
 
 
 
-	"
+"
          transform="translate(-5.6126601,6.3661175)"
          id="text1158"
          style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1160);fill:#000000;fill-opacity:1;stroke:none">
@@ -1074,7 +954,7 @@
       </g>
       <g
          aria-label="12th  82%
-	A.T. Shahni Hr. Sec. School"
+A.T. Shahni Hr. Sec. School"
          transform="translate(-6.1471992,28.0633)"
          id="text1205"
          style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1207);fill:#000000;fill-opacity:1;stroke:none">
@@ -1201,7 +1081,7 @@
       </g>
       <g
          aria-label="10th  84.3%
-	Christ Memorial Hr. Sec. School"
+Christ Memorial Hr. Sec. School"
          transform="translate(-7.2162773,48.910323)"
          id="text1216"
          style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1219);fill:#000000;fill-opacity:1;stroke:none">
@@ -1353,34 +1233,3 @@
     </g>
   </g>
 </svg>
-
-
-
-
-	</div>
-
-	<div class="projects-page">
-		<div class="center_child">
-			<div class="pageheading">
-				Projects
-			</div>
-		</div>
-	</div>
-
-	<div class="experience-page">
-		<div class="center_child">
-			<div class="pageheading">
-				Experience
-			</div>
-		</div>
-	</div>
-
-	<script src = "index2.js"></script>
-</body>
-
-<!-- 
-projects
-about
-experience
-education
-skills -->

@@ -115,7 +115,32 @@ body{
 	
 }
 
+.pageheading{
+	font-family: Raleway;
+	font-size: 80px;
+	color: rgb(60,60,80);
+	margin-top: 50px;
+
+}
+.skill-bar-holder{
+	position: relative;
+	margin-top: 50px;
+}
+.skillset{
+	background-color: white;
+	padding: 5px 10px;
+	box-shadow:4px 4px 10px rgb(40, 40, 40); 
+	position: absolute;
+	right: 0px;
+	top: 5px;
+	font-size: 22px;
+	margin: 0px;
+	
+	margin-left: 20px;
+	z-index: 20;
+}
 .bar1{
+	
 	background-color: skyblue;
 	height: 50px;
 	width: 50%;
@@ -210,9 +235,8 @@ body{
 
 .skills-page{
 	overflow: hidden;
-	display: flex;
 	height: 100vh;
-	align-items:  center;
+
 
 }
 
@@ -232,8 +256,11 @@ body{
 	overflow: hidden;
 	height: 100vh;
 }
-svg{
-	width: 100%;
-	position: absolute;
-	bottom: 0px;
+
+.projects-page{
+	height: 100vh;
+}
+
+.experience-page{
+	height: 100vh;
 }

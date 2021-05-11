@@ -102,7 +102,7 @@ window.onscroll = ()=>{
 	}
 }
 
-var svgs = ['g1408', 'g1287', 'g1343', 'g1399'];
+var svgs = ['g1237', 'g1287', 'g1343', 'g1399', 'g1605'];
 
 function hidesvgs()
 {
