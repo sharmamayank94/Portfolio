@@ -1,3 +1,10 @@
+var mainPage = document.querySelector(".mainpageplaceholder");
+var skillsPage = document.querySelector(".skills-page");
+var educationPage = document.querySelector(".education-page");
+var projectsPage = document.querySelector(".projects-page");
+var experiencePage = document.querySelector(".experience-page");
+var navbar = document.querySelector(".navbar");
+
 function bringBack(obj)
 {
 
@@ -6,8 +13,7 @@ function bringBack(obj)
 		var delay = Math.random();		
 		obj[i].style.transitionDelay = delay + "s";
 		obj[i].style.transitionDuration = "1.5s";
-		obj[i].style.width = "80px";
-		obj[i].style.height = "80px";
+		obj[i].classList.add("nav-options-card-holder-animate");
 	}
 }
 var colors = ["red", "green", "blue", "yellow", "orange"]
@@ -40,7 +46,14 @@ function aboutFlash()
 	var obj = document.querySelector(".aboutflash");
 	var nameBottom = document.querySelector(".name_bottom");
 	var navSectionHolder = document.querySelector(".nav_section_holder");
-	
+	mainPage.style = null;
+	skillsPage.style.height = "0px";
+	educationPage.style.height = "0px";
+	projectsPage.style.height = "0px";
+	experiencePage.style.height = "0px";
+	navbar.style = null;
+
+
 	obj.style.transitionDuration = "0.5s";
 	obj.style.width = "100%";
 	
@@ -65,29 +78,63 @@ function aboutFlash()
 		
 	}, 1000);
 }
-var mainPage = document.querySelector(".mainpageplaceholder");
-var skillsPage = document.querySelector(".skills-page");
-var educationPage = document.querySelector(".education-page");
 function skillflash(){
+	navbar.style.display = "none";
 	mainPage.style.height = "0px";
+	skillsPage.style = null;
 	document.querySelector(".skill-bar-holder").classList.add("skill-bar-holder-animate");
 	educationPage.style.height = "0px";
+	projectsPage.style.height = "0px";
+	experiencePage.style.height = "0px";
 	sidebar.style.display = "flex";
 }
 
 function educationFlash(){
+	navbar.style.display = "none";
 	mainPage.style.height = "0px";
 	skillsPage.style.height = "0px";
+	projectsPage.style.height = "0px";
+	experiencePage.style.height = "0px";
 	showsvgs();
+	educationPage.style = null;
 	sidebar.style.display = "flex";
 }
 
+function projectsFlash(){
+	navbar.style.display = "none";
+	mainPage.style.height = "0px";
+	educationPage.style.height = "0px";
+	skillsPage.style.height = "0px";
+	experiencePage.style.height = "0px";
+	projectsPage.style = null;
+	sidebar.style.display = "flex";
+}
+
+function experienceFlash(){
+	navbar.style.display = "none";
+	mainPage.style.height = "0px";
+	educationPage.style.height = "0px";
+	skillsPage.style.height = "0px";
+	projectsPage.style.height = "0px";
+	experiencePage.style = null;
+	sidebar.style.display = "flex";
+}
+
+
 function reset()
 {
+	var nameBottom = document.querySelector(".name_bottom");
+	var navSectionHolder = document.querySelector(".nav_section_holder");
+	nameBottom.style = null;
+	nameBottom.innerHTML = "Software Engineer | Competitive Programmer";
+	navSectionHolder.style = null;
 	mainPage.style = null;
 	skillsPage.style = null;
 	educationPage.style = null;
+	projectsPage.style = null;
+	experiencePage.style = null;
 	sidebar.style = null;
+	navbar.style = null;
 }
 
 window.onscroll = ()=>{
