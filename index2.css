@@ -77,6 +77,8 @@ body{
 .name_bottom{
 	line-height: 35px;
 	font-size: 25px;
+	padding: 10px;
+	margin: 20px;
 	color: rgb(60, 60, 60);
 	font-family: Raleway, sans-serif;
 }
@@ -319,5 +321,34 @@ body{
 	}
 	.name_bottom{
 		font-size: 18px;
+	}
+
+
+}
+
+@media screen and (max-width: 600px)
+{
+	.nav-options-card-holder-animate{
+		width: 10px;
+		height: 20px;
+	}
+	.nav-options-card{
+		font-size: 14px;
+	}
+	.name{
+		font-size: 20px;
+	}
+	.name_bottom{
+		font-size: 18px;
+	}
+
+	.mainpageplaceholder{
+		flex-direction: column;
+	}
+	.profile{
+		width: 100%;
+	}
+	.mainpage{
+		width: 100%;
 	}
 }
