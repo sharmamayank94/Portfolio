@@ -184,3 +184,18 @@ function showsvgs()
 
 hidesvgs();
 
+function displayNavbar()
+{
+	var navbar = document.querySelector(".navbar");
+	console.log("hey");
+	navbar.classList.remove("fixed-height");
+	var icon = document.querySelector(".icon");
+	icon.onclick = hideNavbar;
+}
+function hideNavbar()
+{
+	var navbar = document.querySelector(".navbar");
+	navbar.classList.add("fixed-height");
+	var icon = document.querySelector(".icon");
+	icon.onclick = displayNavbar;
+}
