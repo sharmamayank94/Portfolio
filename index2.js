@@ -92,6 +92,8 @@ function skillflash(){
 function educationFlash(){
 	navbar.style.display = "none";
 	mainPage.style.height = "0px";
+	var k = document.querySelector(".mainpage");
+	// k.style.height = "0px";
 	skillsPage.style.height = "0px";
 	projectsPage.style.height = "0px";
 	experiencePage.style.height = "0px";
